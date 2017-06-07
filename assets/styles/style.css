@@ -2,10 +2,11 @@ html, body {
       height: 100%;
       margin: 0;
       padding: 0;
+
 }
 .jbnb-map-dimensions{
   width: 100%;
-  min-height: 100%;
+  min-height: 550px;
 }
 .jbnb-hero-container{
   background-image: url('../images/fa-banner-background.jpg');
@@ -51,6 +52,7 @@ footer {
 /* material design overrides*/
 .mdl-data-table{
   width: 100%;
+  table-layout: fixed;
 }
 .mdl-textfield__label{
   color: black;
@@ -64,4 +66,14 @@ footer {
 }
 .mdl-dialog{
   width: 350px;
+}
+.mdl-data-table__cell--non-numeric{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#infowindow{
+  color: teal;
+
+
 }
