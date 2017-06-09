@@ -2,11 +2,11 @@ html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-
 }
 .jbnb-map-dimensions{
   width: 100%;
-  min-height: 550px;
+  min-height: 529px;
+
 }
 .jbnb-hero-container{
   background-image: url('../images/fa-banner-background.jpg');
@@ -22,7 +22,13 @@ html, body {
   flex: 0 0 auto;
   width: 550px;
 }
-
+.jbnb-results{
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  display: none;
+}
 .jbnb-zip-code-field {
   width: 100px;
 }
@@ -32,28 +38,45 @@ html, body {
   text-align: center;
   
 }
-.jbnb-header-container h1{
+.jbnb-header-container h2{
   font-family: 'Playfair Display', serif;
 }
 .jbnb-white-image{
   width: 100%;
 }
-
-
-footer {
-  background-image: url(images/footer-background.png);
-  background-size: cover;
-  text-align: center;
-  padding: 20px;
+.jbnb-table{
+  max-height: 700px;
+  width: 100%;
+  overflow-y: auto;
+  table-layout: fixed;
 }
-
+.jbnb-table tr{
+  cursor: pointer;
+}
+.jbnb-table-column--job-title{
+  min-width: 150px;
+}
+.jbnb-table-column--company{
+  min-width: 100px;
+}
+.jbnb-table-column--url{
+  width: 86px;
+}
+.jbnb-table-column--post-age{
+  width: 112px;
+}
+.jbnb-pagination{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.jbnb-pagination__previous-jobs, .jbnb-pagination__next-jobs{
+  flex: 0 0 auto;
+  visibility: hidden;
+}
 
 
 /* material design overrides*/
-.mdl-data-table{
-  width: 100%;
-  table-layout: fixed;
-}
 .mdl-textfield__label{
   color: black;
 }
@@ -71,9 +94,6 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 }
-#infowindow{
-  color: teal;
 
-
-}

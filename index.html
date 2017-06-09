@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobs Bnb</title>
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"> -->
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-blue.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/map-icons.css">
 </head>
 
 <body>
     <div class="jbnb-hero-container">
         <div class="jbnb-header-container">
-            <h1>Jobs BnB</h1>
-            <h4>Search for any job based on the location you give us!</h4>
+            <h2>Jobs BnB</h2>
+            <h5>Search for any job based on the location you give us!</h5>
         </div>
         <div class="jbnb-search-container">
             <form action="#">
@@ -36,88 +37,74 @@
                 </button>
             </form>
         </div>
+        <div class="jbnb-results">Results: <span class="jbnb-results__number">0</span> job listings</div>
     </div>
     <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
             <div id="map" class="jbnb-map-dimensions"></div>
         </div>
-        <div class="mdl-cell mdl-cell--6-col">
-            <table class="mdl-data-table mdl-js-data-table ">
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+            <table class="jbnb-table mdl-data-table mdl-js-data-table ">
                 <thead>
                     <tr>
-                        <th class="mdl-data-table__cell--non-numeric">Job Title</th>
-                        <th class="mdl-data-table__cell--non-numeric">Company</th>
-                        <th class="mdl-data-table__cell--non-numeric">Location</th>
-                        <th class="mdl-data-table__cell--non-numeric">URL</th>
+                        <th class="mdl-data-table__cell--non-numeric jbnb-table-column--job-title">Job Title</th>
+                        <th class="mdl-data-table__cell--non-numeric jbnb-table-column--company">Company</th>
+                        <th class="mdl-data-table__cell--non-numeric jbnb-table-column--url" >URL</th>
+                        <th class="mdl-data-table__cell--non-numeric 
+                        jbnb-table-column--post-age" >Post Age</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">[jobtitle]</td>
-                        <td class="mdl-data-table__cell--non-numeric">[company]</td>
-                        <td class="mdl-data-table__cell--non-numeric">[formattedLocation]</td>
-                        <td class="mdl-data-table__cell--non-numeric">[url in a link]</td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Java Developer</td>
-                        <td class="mdl-data-table__cell--non-numeric">Tradelogic Corporation</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=83400e947276d20b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Software Developer III - US Job</td>
-                        <td class="mdl-data-table__cell--non-numeric">Rackspace</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=066f952bb6793d2b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Software Developer III - US Job</td>
-                        <td class="mdl-data-table__cell--non-numeric">Rackspace</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=066f952bb6793d2b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Software Developer III - US Job</td>
-                        <td class="mdl-data-table__cell--non-numeric">Rackspace</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=066f952bb6793d2b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Software Developer III - US Job</td>
-                        <td class="mdl-data-table__cell--non-numeric">Rackspace</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=066f952bb6793d2b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Software Developer III - US Job</td>
-                        <td class="mdl-data-table__cell--non-numeric">Rackspace</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=066f952bb6793d2b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Software Developer III - US Job</td>
-                        <td class="mdl-data-table__cell--non-numeric">Rackspace</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=066f952bb6793d2b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Software Developer III - US Job</td>
-                        <td class="mdl-data-table__cell--non-numeric">Rackspace</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=066f952bb6793d2b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                     <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Software Developer III - US Job</td>
-                        <td class="mdl-data-table__cell--non-numeric">Rackspace</td>
-                        <td class="mdl-data-table__cell--non-numeric">Austin, TX</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="http://www.indeed.com/viewjob?jk=066f952bb6793d2b&qd=VurSLpjL_C5x-OsC8F-9NGcYiUmqnprrq2MtIyXogmRpzcw_E7jGkHBk-CGbv6Dm_Xi5BXyNYBQGtr4UYaav2xGUWcVBinyLZAVK0SVVur0&indpubnum=1757981803167718&atk=1806r4s2v0mph2o9" target="_blank">Link</a></td>
+                        <td colspan="4"></td>
                     </tr>
                 </tbody>
             </table>
+            <div class="jbnb-pagination">
+            	<div class="jbnb-pagination__previous-jobs"><a href="#">< Previous Jobs </a></div>
+            	<div class="jbnb-pagination__next-jobs"><a href="#">Next Jobs ></a></div>
+            </div>
         </div>
     </div>
-    <footer>
-        <span id="indeed_at"><a title="Job Search" href="https://www.indeed.com" rel="nofollow" >Jobs by <img alt=Indeed src="https://www.indeed.com/p/jobsearch.gif" style="border: 0; vertical-align: middle;"></a></span>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Team Overachievers</div>
+            <ul class="mdl-mini-footer__link-list">
+                <li><a href="https://github.com/alanttran/JobBnB"target="_blank">Github</a></li>
+                <li>&nbsp;</li>
+                <li>Alan Tran</li>
+                <li>Anna Faizi</li>
+                <li>David Shollings</li>
+                <li>Alex Himchak</li>
+            </ul>
+        </div>
     </footer>
     <dialog class="mdl-dialog">
         <h4 class="mdl-dialog__title">Adblock detected</h4>
@@ -133,10 +120,13 @@
 
 </html>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIUiSNDmPwuCrVQ0Lx93f-cnJLkEPeG-k&callback=initMap">
-</script>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIUiSNDmPwuCrVQ0Lx93f-cnJLkEPeG-k"></script>
 <!-- project stylesheets -->
 <script src="assets/javascript/ads.js"></script>
 <script src="assets/javascript/adblock-prompt.js"></script>
+<script src="assets/javascript/ipinfo.js"></script>
+<script src="assets/javascript/search.js"></script>
 <script src="assets/javascript/script.js"></script>
+
+
+<script src="assets/javascript/map-icons.js"></script>

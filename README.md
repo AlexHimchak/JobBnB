@@ -4,7 +4,11 @@ Find tech jobs within a 40 miles radius based on the Indeed API
 
 ## Demo
 
-* [https://alanttran.github.io/JobBnB/](https://alanttran.github.io/JobBnB/) 
+* [https://alanttran.github.io/JobBnB/](https://alanttran.github.io/JobBnB/)
+
+## Slides
+
+* [Google Slide](https://docs.google.com/presentation/d/1MPnwwTsaeM9k_yO6vCGSLXV8BUsqwkTdOEgJeTyIO44/edit#slide=id.g22c550c69a_0_68)
 
 ## Built With
 
@@ -12,6 +16,7 @@ Find tech jobs within a 40 miles radius based on the Indeed API
 * [Indeed API](https://market.mashape.com/indeed/indeed) - Job Search API
 * [Google Maps API](https://developers.google.com/maps/) - Maps API
 * [ipinfo API](https://ipinfo.io) - IP Location API
+* [CORS-now](https://cors.now.sh/) - reverse proxy with CORS headers
 
 ## Project Requirements
 
@@ -28,7 +33,7 @@ Find tech jobs within a 40 miles radius based on the Indeed API
 
 ## Authors
 
-* **Alan Tran** - *PM and front-end* - [alanttran](https://github.com/alanttran)
+* **Alan Tran** - *PM, QA and front-end* - [alanttran](https://github.com/alanttran)
 * **Anna B Faizi** - *front-end* - [annabfaizi](https://github.com/annabfaizi)
 * **David Shollings** - *javascript* - [Dshollings](https://github.com/Dshollings)
 * **Alex Himchak** - *javascript* - [AlexHimchak](https://github.com/AlexHimchak)
