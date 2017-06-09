@@ -20,7 +20,17 @@ html, body {
 }
 .jbnb-search-container{
   flex: 0 0 auto;
-  width: 550px;
+  width: 100%;
+}
+.jbnb-search-container form{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.jbnb-search-container form div{
+    flex: 0 0 auto;
 }
 .jbnb-results{
   flex: 0 0 auto;
@@ -74,7 +84,14 @@ html, body {
   flex: 0 0 auto;
   visibility: hidden;
 }
-
+@media screen and (max-width: 600px) {
+  .jbnb-header-container h5{
+    display: none;
+  }
+  tr>th:nth-child(even),  tr>td:nth-child(even) {
+    display: none;
+  }
+}
 
 /* material design overrides*/
 .mdl-textfield__label{
